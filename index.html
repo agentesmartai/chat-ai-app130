@@ -1,0 +1,79 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente Virtual - Línea 130 de Denuncia Ciudadana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Enlace para Google Fonts -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #6ec7d8; /* Color de fondo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif; /* Utiliza la fuente Roboto */
+        }
+
+        .content {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente detrás del texto */
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            border-radius: 15px; /* Bordes redondeados */
+            position: relative;
+        }
+
+        .arrow {
+            display: block;
+            margin: 20px auto 0 50%; /* Desplaza la flecha más a la derecha */
+            text-align: center;
+            font-size: 36px; /* Tamaño más grande de la flecha */
+            transform: rotate(45deg); /* Gira la flecha para que apunte hacia la derecha */
+            animation: pulse 1.5s infinite; /* Animación de pulsación */
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1) rotate(45deg); }
+            50% { transform: scale(1.2) rotate(45deg); }
+            100% { transform: scale(1) rotate(45deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        Soy el asistente virtual de la Línea 130 de Denuncia Ciudadana. Mi objetivo es resolver tus dudas, guiarte en el proceso y asegurarte de que sepas cómo utilizar la plataforma para hacer llegar tus preocupaciones a las autoridades correspondientes. ¡Estoy aquí para apoyarte en todo lo que necesites!<br><br>
+        <strong>Nota aclaratoria:</strong> No siempre responderé 100% exacto, pero siempre haré mi mejor esfuerzo para ayudarte.<br><br>
+        Para interactuar mejor conmigo, por favor:<br>
+        • Haz tus preguntas de forma clara y concisa<br>
+        • Evita usar jerga o expresiones coloquiales
+        <div class="arrow">→</div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '66b414ec2063984247806f71' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
